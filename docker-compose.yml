@@ -1,6 +1,6 @@
 version: '3'
 services:
   hello_world:
-    build: ./hello_world
+    build: ./services/hello_world
     ports:
       - "0.0.0.0:5001:80"
