@@ -1,0 +1,8 @@
+source 'https://rubygems.org' do
+
+  gem 'rspec'
+  gem 'capy'
+  gem 'selenium-webdriver'
+  gem 'pry'
+
+end
