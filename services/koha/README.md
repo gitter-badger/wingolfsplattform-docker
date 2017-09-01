@@ -16,4 +16,4 @@ cd wingolfsplattform-docker
 docker-compose up koha
 ```
 
-Then, open a browser to http://localhost:8001. The default credentials are `admin` and `secret`.
+Then, open a browser to http://localhost:8081. The default credentials are `admin` and `secret`.
