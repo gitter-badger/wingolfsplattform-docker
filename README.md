@@ -13,7 +13,9 @@ docker-compose up -d
 open http://localhost:5001
 ```
 
-To stop the services, run `docker-compose down`.
+To stop the services, run `docker-compose stop`.
+
+**Attention:** `docker-compose down` would **delete all the data volumes**!
 
 ## Installation
 
