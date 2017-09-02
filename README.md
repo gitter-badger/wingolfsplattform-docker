@@ -46,3 +46,27 @@ docker-machine start default && eval $(docker-machine env default)
 If there are version conflicts between client and docker api, also called docker engine, just run `docker-machine upgrade default`.
 
 Now, you are ready to run `docker-compose up`.
+
+## Secrets for production servers
+
+Secrets for the production servers are not to be included in this repository. Instead, secrets are collected in a separate file `docker-compose-secrets.yml` on the production servers.
+
+```yaml
+# Example: /root/docker-compose-secrets.yml
+
+version: '3'
+services:
+  mysql:
+    environment:
+      MYSQL_ROOT_PASSWORD: ".............................................."
+```
+
+In order to launch the docker-compose services with these separate secrets, one needs to specify both docker-compose files
+when calling `docker-compose up`:
+
+```bash
+docker-compose \
+  --file /var/wingolfsplattform-docker/docker-compose.yml \
+  --file /root/docker-compose-secrets.yml \
+  up
+```
