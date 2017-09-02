@@ -22,6 +22,8 @@ services:
       - backend
     ports:
       - "0.0.0.0:8080:80"
+    depends:
+      - koha
 
   koha_mysql:
     container_name: koha_mysql
