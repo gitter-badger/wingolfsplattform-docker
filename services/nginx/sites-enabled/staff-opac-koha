@@ -1,0 +1,8 @@
+server {
+    listen 80;
+    server_name staff.opac.wingolfsplattform.org staff.opac.wingolfsplattform.dev;
+
+    location / {
+        proxy_pass http://koha:8081;
+    }
+}

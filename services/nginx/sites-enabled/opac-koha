@@ -3,6 +3,6 @@ server {
     server_name opac.wingolfsplattform.org opac.wingolfsplattform.dev;
 
     location / {
-        proxy_pass http://koha:8081;
+        proxy_pass http://koha:8080;
     }
 }

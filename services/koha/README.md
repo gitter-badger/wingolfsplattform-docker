@@ -10,10 +10,17 @@ We are using **Koha** as OPAC system for our physical archive.
 This snippet shows how to run this locally on a machine with docker:
 
 ```bash
+# Clone this repo
 git clone git@github.com:fiedl/wingolfsplattform-docker.git
 cd wingolfsplattform-docker
 
-docker-compose up koha
+# Define hostname aliases (needed for nginx routing)
+sudo echo "127.0.0.1 opac.wingolfsplattform.dev staff.opac.wingolfsplattform.dev" >> /etc/hosts
+
+# Start services
+docker-compose up koha nginx
 ```
 
-Then, open a browser to http://localhost:8081. The default credentials are `admin` and `secret`.
+Open staff interface: http://staff.opac.wingolfsplattform.dev:8080 (credentials: `admin`, `secret`)
+
+Open public opac: http://opac.wingolfsplattform.dev:8080
