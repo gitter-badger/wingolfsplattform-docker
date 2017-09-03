@@ -4,7 +4,7 @@ run: all
 
 test:
 	docker-compose up -d
-	docker-compose run tests bin/cucumber --require cucumber/ services/
+	docker-compose run tests /usr/bin/xvfb-daemon-run bin/cucumber --require cucumber/ services/
 
 test_locally:
 	docker-compose up -d
