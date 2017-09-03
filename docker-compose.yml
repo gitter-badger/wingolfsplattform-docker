@@ -121,3 +121,5 @@ services:
     volumes:
       - ./spec/cucumber:/root/cucumber
       - ./spec/services:/root/services
+    depends_on:
+      - hello_world
