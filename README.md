@@ -1,5 +1,7 @@
 # wingolfsplattform-docker
 
+[![Build Status](https://travis-ci.org/fiedl/wingolfsplattform-docker.svg?branch=master)](https://travis-ci.org/fiedl/wingolfsplattform-docker)
+
 Docker-Compose-Konfiguration für den container-basierten Teil der Wingolfsplattform.
 
 ## Usage
