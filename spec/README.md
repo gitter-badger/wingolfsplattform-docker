@@ -8,6 +8,10 @@ This is the integration test suite for wingolfsplattform-docker.
 git clone git@github.com:fiedl/wingolfsplattform-docker.git
 cd wingolfsplattform-docker
 
+# Run the tests inside a docker container:
+make test
+
+# Or, run the tests locally if you have ruby and firefox installed:
 make test_locally
 ```
 
@@ -28,3 +32,17 @@ Scenario: Visiting the hello_world service
 The steps, e.g. "When I visit", are defined in [cucumber/step_definitions](cucumber/step_definitions).
 
 The above spec launches a browser that visits the given url and checks whether the text is present in the browser window. The browser testing is done with [Capybara](https://github.com/teamcapybara/capybara#using-capybara-with-cucumber) and Firefox.
+
+## Rebuild and cleanup
+
+If you add something to the `Gemfile`, you need to rebuild the test container.
+
+```bash
+make rebuild_test
+```
+
+If you wish to remove the test image, there's a cleanup task for that.
+
+```bash
+make clean
+```

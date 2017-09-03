@@ -115,3 +115,9 @@ services:
       options:
         max-size: "10m"
         max-file: "2"
+
+  tests:
+    build: ./spec
+    volumes:
+      - ./spec/cucumber:/root/cucumber
+      - ./spec/services:/root/services

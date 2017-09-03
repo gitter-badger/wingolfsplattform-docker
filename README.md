@@ -17,6 +17,18 @@ To stop the services, run `docker-compose stop`.
 
 **Attention:** `docker-compose down` would **delete all the data volumes**!
 
+## Run tests
+
+Each service has its own tests in its repository. But there are also some high level integration tests in this repository that make sure that the services are correctly installed and can be accessed through the desired ports or addresses.
+
+To run the tests, just type:
+
+```
+make test
+```
+
+The tests are defined in the [`spec` directory](spec/). For more info, have a look at the README there.
+
 ## Installation
 
 If you have docker and docker-compose already installed, all you need to do is to clone this repository.
