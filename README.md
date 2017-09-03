@@ -1,5 +1,7 @@
 # wingolfsplattform-docker
 
+[![Join the chat at https://gitter.im/wingolfsplattform-docker/Lobby](https://badges.gitter.im/wingolfsplattform-docker/Lobby.svg)](https://gitter.im/wingolfsplattform-docker/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/fiedl/wingolfsplattform-docker.svg?branch=master)](https://travis-ci.org/fiedl/wingolfsplattform-docker)
 
 Docker-Compose-Konfiguration für den container-basierten Teil der Wingolfsplattform.
